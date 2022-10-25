@@ -14,11 +14,12 @@ function Button({ /* 2.2. Geef hier je argumenten mee */}) {
     2.4. Schrijf hier wat styling die je zal meegeven aan je component.
     */
   }
-  return (
+  //return (
     /*
-    2.5. Schrijf hier de HTML van je Button component en geef het styling of andere argumenten mee
+    2.5. Schrijf hier tussen de return de HTML van je Button component en geef het styling of andere argumenten mee
+    Zorg zeker dat de return () uit commentaar staat.
     */
-  )
+  //)
 }
 
 Button.propTypes = {
