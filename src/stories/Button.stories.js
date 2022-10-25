@@ -1,30 +1,32 @@
 import Button from '../components/Button'
 
 export default{
-    title: "Button",
-    component: Button,
-    argTypes: { handleClick: { action: "handleCLick"},
-                backgroundColor: "blue"
+    /*
+    2.7. Geef je component een titel en specifieer het component dat je gaat renderen. 
+         Tip: title: "...",
+              component: ...,
+    */
     
-        }
 }
 
-const Template = args => <Button {...args} />
+/* 2.8. Maak hier een constante functie Template aan die args meekrijgt en je component terug geeft met die args.
+        Tip: const Template = args => <ComponentNaam {...args} />
+*/
 
-export const Red = Template.bind({})
-Red.args = {
+/* 2.9. Maak nu 3 stories van je component.
+
+   2.9.1. Begin met een story te exporteren en die gelijk te zetten aan Template.bind({}).
+
+   2.9.2. Definïeer nu de args van die story.
+
+   Voorbeeld van een story:
+
+    export const RoodKnopje = Template.bind({})
+    RoodKnopje.args = {
     backgroundColor: "red",
-    label: "tesx",
+    label: "Deze knop is mogelijks rood.",
     size: "lg",
-    fontSize: "45px",
-    display: "visible"
-}
+    fontSize: "25px"
+    }
 
-export const SmallBlue = Template.bind({})
-SmallBlue.args = {
-    backgroundColor: "blue",
-    label: "tesx",
-    size: "sm",
-    fontSize: "45px",
-    display: "visible"
-}
+    */

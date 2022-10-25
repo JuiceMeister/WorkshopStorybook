@@ -1,38 +1,30 @@
 import PropTypes from "prop-types"
 
-function Button({ label, backgroundColor, size = "md", borderRadius, fontSize, color, display, handleClick }) {
-  let scale = 1
-  let displayProp
-  let fontsize = fontSize
-  if (size === "sm") scale = 0.75
-  if (size === "lg") scale = 1.5
-  if (display === "visible") displayProp = "block"
-  if (display === "invisible") displayProp = "none"
+function Button({ /* 2.2. Geef hier je argumenten mee */}) {
+  
+  /*
+  2.3. Speel hier wat rond met variabelen die meegegeven argumenten als waarde krijgen of transformeren
+  gebaseerd op specifieke toestanden van de meegegeven argumenten.
+
+  Kijk naar de slides voor code en/of wat inspiratie.
+  */
+
   const style = {
-    backgroundColor,
-    padding: `${scale * 0.5}rem ${scale * 1}rem`,
-    border: "lightgray 1px solid",
-    fontSize: `${fontsize}px`,
-    display: `${displayProp}`,
-    color: `${color}`,
-    borderRadius: `${borderRadius}px`
+    /*
+    2.4. Schrijf hier wat styling die je zal meegeven aan je component.
+    */
   }
   return (
-    <button onClick={handleClick} style={style}>
-      {label}
-    </button>
+    /*
+    2.5. Schrijf hier de HTML van je Button component en geef het styling of andere argumenten mee
+    */
   )
 }
 
 Button.propTypes = {
-  label: PropTypes.string,
-  fontSize: PropTypes.number,
-  backgroundColor: PropTypes.string,
-  color: PropTypes.string,
-  size: PropTypes.oneOf(["sm", "md", "lg"]),
-  display: PropTypes.oneOf(["visible", "invisible"]),
-  borderRadius: PropTypes.number,
-  handleClick: PropTypes.func,
+  /*
+  2.11. Stel nu wat propTypes in
+  */
 }
 
 export default Button
